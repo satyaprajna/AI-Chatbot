@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Chat Bot</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Position the button in the top-right corner */
+        .gaming-button-container {
+          position: fixed; /* Fixed position to keep it at the top */
+          top: 20px; /* Distance from the top of the page */
+          right: 20px; /* Distance from the right side of the page */
+          z-index: 1000; /* Ensures it's above other content */
+        }
+        gaming-button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            padding: 0; /* No padding, logo will define the size */
+            border-radius: 50%; /* Makes the button circular */
+            width: 60px; /* Set width for the circular button */
+            height: 60px; /* Set height for the circular button */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease; /* Smooth scaling on hover */
+          }
+          .gaming-button:hover {
+            transform: scale(1.1); /* Slightly enlarge on hover */
+          }
+      
+          /* Logo size */
+          .gaming-logo {
+            width: 40px; /* Adjust the size of the logo */
+            height: 40px; /* Adjust the size of the logo */
+            border-radius: 50%; /* Makes the logo itself circular */
+          }
+        </style>
+      
+</head>
+<body>
+    <div class="gaming-button-container">
+        <button class="gaming-button" onclick="gamingButtonClicked()"><a href="game.html" >Games</a></button>
+          <img src="https://th.bing.com/th/id/OIP.03RNa6h6BeyfoXfWMPam7QHaHa?rs=1&pid=ImgDetMain" alt="Gaming Logo" class="gaming-logo">
+        </button>
+      </div>
+   
+    <div class="chat-container">
+<div class="ai-chat-box">
+    <img src="ai.png" alt="" id="aiImage" width="10%">
+    <div class="ai-chat-area">
+   Hello ! How Can I Help you Today?
+    </div>
+   
+</div>
+    </div>
+    <div class="prompt-area">
+<input type="text" id="prompt" placeholder="Message...">
+<button id="image"><img src="img.jpg" alt="" width="60" >
+<input type="file" accept="images/*" hidden></button>
+<button id="submit"><img src="submit.svg" alt=""></button>
+    </div>
+  <script src="script.js"></script>  
+</body>
+</html>
